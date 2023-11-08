@@ -1,0 +1,28 @@
+1. Given a number. Print “odd” if the number is odd and “even” if it’s even.
+
+1.1 let number;
+
+number = prompt("Write a number", " ");
+  if(number % 2 === 0){
+    console.log('even')
+      }else {
+    console.log('odd')
+  }  
+
+
+1.2 let number = prompt("Write a number", " ");
+  if(number / 2 % 1){
+    alert('odd')
+      }else {
+    alert('even')
+  }
+
+2.let number1 = prompt("Give me first number");
+ let number2 = prompt("Give me second number");
+   if(number1 % number2 == 0  || number2 % number1  == 0  ){
+      alert(1)
+        }else{
+      alert(0)
+    } 
+
+3. 
