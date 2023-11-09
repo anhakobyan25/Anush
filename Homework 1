@@ -26,3 +26,15 @@ number = prompt("Write a number", " ");
     } 
 
 3. 
+
+
+
+
+
+4. let number1 = +prompt( );
+let number2 = +prompt( );  
+let number3 = +prompt( );
+let number4 = +prompt( );  
+let number5 = +prompt( );
+let sum = (number1 + number2 +  number3 + number4   + number5) / 5;
+console.log(sum);
