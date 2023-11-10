@@ -1,6 +1,7 @@
 1. Given a number. Print “odd” if the number is odd and “even” if it’s even.
 
-1.1 let number;
+1.1
+let number;
 
 number = prompt("Write a number", " ");
   if(number % 2 === 0){
@@ -10,14 +11,17 @@ number = prompt("Write a number", " ");
   }  
 
 
-1.2 let number = prompt("Write a number", " ");
+1.2
+let number = prompt("Write a number", " ");
   if(number / 2 % 1){
     alert('odd')
       }else {
     alert('even')
   }
 
-2.let number1 = prompt("Give me first number");
+2.Given two numbers print 1 if one of them is divisible by the other one, otherwise print 0.
+
+let number1 = prompt("Give me first number");
  let number2 = prompt("Give me second number");
    if(number1 % number2 == 0  || number2 % number1  == 0  ){
       alert(1)
@@ -25,16 +29,49 @@ number = prompt("Write a number", " ");
       alert(0)
     } 
 
-3. 
+3. Given a positive integer. Bring the last digit of the number to the beginning. Print the new
+number. If the last digit of the inserted number is 0, number remains the same.
+
+let a = +prompt();
+let b;
+let r;
+if((a % 10 === 0) || (a < 9)){
+alert(a);
+}
+ if(b = Math.floor(a / 10)){
+ if(r = (a % 10)){
+alert(r +  (b).toString()); 
+}
+} 
 
 
 
+4.Given five numbers as input. Calculate and print the average of the numbers(without
+using arrays). 
 
-
-4. let number1 = +prompt( );
+let number1 = +prompt( );
 let number2 = +prompt( );  
 let number3 = +prompt( );
 let number4 = +prompt( );  
 let number5 = +prompt( );
-let sum = (number1 + number2 +  number3 + number4   + number5) / 5;
-console.log(sum);
+Sum = (number1 + number2 +  number3 + number4   + number5) / 5;
+console.log(Sum);
+
+
+
+5 .Given the following code rewrite it using only two if operators. (Hint: use logical
+operators).
+
+let n = +prompt();
+let i = 0;
+let j = 0;
+
+if((n % 2 === 0) && (!Math.floor(n / 10)) {
+        i += 1;
+  }
+ if((n % 3 === 0) && (n % 10 === 1)) {
+            j += 1;
+  }
+
+alert(i);
+alert(j);
