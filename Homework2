@@ -1,0 +1,25 @@
+1. Given a number print its digits count. Use both loops (for, while)
+
+let n = +prompt("Giv me number");
+n = Math.abs(n)
+let nString = n + "";
+let  number= 0;
+for(let i = 0; i < nString.length; i++){
+number  = +nString.length
+}
+console.log(number)
+
+1.1
+let n = +prompt("Give me number");
+n = Math.abs(n)
+let nString = n + "";
+let  number= 0;
+let i = 0; 
+while(i < nString.length) {
+i++
+number  = +nString.length
+}
+console.log(number)
+
+
+2.
