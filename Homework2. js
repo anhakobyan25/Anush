@@ -69,7 +69,7 @@ let last = undefined;
 let str = "";
 while(num){
 	last = num % 10;
-num = (num - last) /10;
+	num = (num - last) /10;
 		if(last % 2 === 0 && num %2 === 0){
 		str = "-" + last + str
 		}	else {
@@ -77,10 +77,6 @@ num = (num - last) /10;
 		} 
 }
 console.log(str)
-
-
-
-
 
 
 5. Given a positive number. Print it in reverse order.
