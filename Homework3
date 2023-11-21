@@ -1,1 +1,24 @@
 
+
+
+
+
+
+
+
+
+
+
+
+
+5. Insert two positive integers n and m between 1 and 10. Compute and print  nm.
+
+
+function sum (a, b){
+if(a >= 1 && a <= 10 && b >= 1 && b <= 10){
+sum = a**b;
+} else {
+sum = "No function"
+}
+return sum;
+} 
