@@ -37,8 +37,29 @@ alert ('true')
 
 
 
-4.  
+4. Insert a n positive number. Print the n-st prime number.  
 
+function isPrime(num) {
+  for (let i = 2; i < num; i++) {
+    if (num % i === 0) return false;
+  }
+  return num !== 1;
+}
+function generatePrime (num) {
+  let arr = [];
+  let i = 2;
+  while(arr.length < num){
+      if(isPrime(i)){
+				arr.push(i)
+      }
+        if(i === 2){
+                    i= i + 1
+                    } else {
+                    i = i + 2
+ }
+  };
+  return arr;
+};
 
 
 5. Insert two positive integers n and m between 1 and 10. Compute and print  nm.
