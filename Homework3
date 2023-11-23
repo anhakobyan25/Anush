@@ -7,21 +7,36 @@
 
 
 
-2.
+2.Insert a number. Remove all zeros from the number, except the last one and print the
+number. If there are at most one zero, print “Nothing to remove”.
 
-let num = prompt('');
-let newNum = 0;
-let counter = 0;
-for(i = num.length - 1; i >= 0; i--){
-	if(num[i] == '0'){
-		counter++;
-	}
-		if(counter > 1){
-			num = num.slice(0, i) + num.slice(i + 1)
-				counter--;
-		}
+let num = prompt("Give me number");
+let last = undefined;
+let str = "";
+let j = 0;
+let num1 = num
+while(num){
+if(num % 10 === 0){
+j++
 }
-console.log(num)
+ last = num % 10;
+ num = (num - last) /10;
+  if(last === 0 && num !== 0 ){
+   if( last === 0){
+   last = ''
+   }str = '' + last + str
+      }else{
+      str = last + str
+      }
+}
+ if(j === 1 || num1 === 0){
+alert("nothing to remove")
+}else if(num1 % 10 === 0 && j > 1){
+alert(str + "0")
+} else{
+alert(str)
+}
+
 
 3. Insert a n positive number. Check number is prime or not. Prime numbers are numbers that have only 2 factors: 1 and themselves. For example, the first 5 prime numbers are 2, 3, 5, 7, and 11.
 
