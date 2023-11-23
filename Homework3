@@ -38,6 +38,33 @@ alert(str)
 }
 
 
+
+let num = prompt("Give me number");
+let last = undefined;
+let str = "";
+let j = 0;
+let num1 = num
+while(num){
+	if(num % 10 === 0){
+		j++
+	}
+	last = num % 10;
+ 	num = (num - last) /10;
+  if(last === 0 && num !== 0 ){
+   		str  = '' + last + str;
+  } else if (last == 0)
+		last = ''		
+ else {
+    	str = last + str
+    }
+}
+if(j === 1 || num1 === 0){
+	alert("nothing to remove")
+}else if(num1 % 10 === 0 && j > 1){
+	alert(str + "0")
+} else{
+	alert(str)
+
 3. Insert a n positive number. Check number is prime or not. Prime numbers are numbers that have only 2 factors: 1 and themselves. For example, the first 5 prime numbers are 2, 3, 5, 7, and 11.
 
 let num = prompt("")
