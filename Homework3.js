@@ -1,3 +1,20 @@
+let square = function(a, b){
+let result = '';
+	for(let i = 1; i <= a; i++){
+	let print = '';
+	for(let j = 1; j <= b; j++){
+		if( j > 1 && j < b && i > 1 && i < a){
+		print =  print + ' '
+		} else {
+		print = print + '*'
+		}
+	}
+	result =  result + print + "\n"
+	}
+	console. log(result)
+}
+
+
 1. Insert a number. Print “yes” if it contains 3 successive zeros, otherwise print “no”.
 
 let num = prompt("Give me number");
