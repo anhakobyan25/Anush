@@ -52,8 +52,6 @@ function printPrimeNumber(num) {
 }
 
 
-
-
 // 4. Enter a positive number. Calculate and print its factorial. ( n! = n * (n-1) * (n-2) * … * 3 * 2
 // * 1 , 0! = 1 )
 let factorial = function(num) {
