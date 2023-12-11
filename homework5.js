@@ -7,9 +7,9 @@ function palidrome(world) {
     i--
   }
   if (str === world) {
-    return yes
+    return ("yes")
   } else {
-    return no
+    return ("no")
   }
 }
 
@@ -57,7 +57,7 @@ function palidrome(word) {
   for (let i = 0; i < num; i++) {
     str += word[i]
   }
-  if (i % 2 !== 0) {
+  if (i % 2 !== 0) {  // Եթե տրված բառի քանակը զույգ է պետք չի, բայց կենտ լինեու դեպքում անհրաժեշտ է  
     num = num + 1
   }
   while (j >= num) {
@@ -96,7 +96,7 @@ function number(num) {
 
 let me = {
   name: "Anush",
-  surname: "Hakobyan"
+  surname: "Hakobyan"  // նոր  object֊ի դեպքում միայն վերջի 2  property-ն է վերադարձնում
 }
 
 for (let key in me) {
