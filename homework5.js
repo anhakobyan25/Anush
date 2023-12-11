@@ -93,7 +93,7 @@ function number(num) {
 
 
 //5.Given an object. Invert it (keys become values and values become keys).
-
+/*
 let me = {
   name: "Anush",
   surname: "Hakobyan"  // նոր  object֊ի դեպքում միայն վերջի 2  property-ն է վերադարձնում
@@ -102,4 +102,17 @@ let me = {
 for (let key in me) {
   console.log(`${me[key]} : ${key}`)
 }
+*/
 
+
+
+
+
+
+function invertObject(obj){
+    let invertedObj = {}
+    for(const key in obj){
+        invertedObj[obj[key]]=key
+    }
+    return invertedObj
+} 
