@@ -127,22 +127,21 @@ function myIndexOf(string, searchValue, fromIndex = 0) {
 
 // endsWith ??
 
-function myEndsWith(string, searchString, index = 0) {
-  for (let i = string.length; i >= index; i--) {
-    let match = true;
-    for (let j = 0 ; j <=  searchString.length ; j--) {
-      if (string[i - j] !== searchString[j]) {
-        match = false;
+function myEndsWith(string, searchString, index = string.length) {
+  let result 
+  let str = '
+  for (let i = index - searchString.length; i < index; i++) {
+    str += a[i]
+  }
+    for (let j = 0 ; j <  str.length ; j++) {
+      if (searchString[ j] !== str[j]) {
+        result = false;
         break;
-      }
-    }
-
-    if (match) {
-      return true;
+      } else {
+        result = true
     }
   }
-
-  return false;
+  return result
 }
 
 //inculdes
