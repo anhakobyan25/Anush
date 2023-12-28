@@ -56,3 +56,13 @@ function myEvery(array, fn) {
   }
   return true
 }
+
+//reduce
+function myReduce(array, fn, initialValue){
+    let result = [] 
+    let acc = initialValue !== undefined ? initialValue : 0
+    for(let i = 0; i< array.length; i++){
+    acc  = (fn(acc ,array[i],i, array))
+    }
+return acc 
+}
