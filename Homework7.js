@@ -59,14 +59,6 @@ function myEvery(array, fn) {
 
 //reduce
 function myReduce(array, fn, initialValue){
-    let result = [] 
-    let acc = initialValue !== undefined ? initialValue : array[0]
-    for(let i = 0; i< array.length; i++){
-    acc  = (fn(acc ,array[i],i, array))
-    }
-return acc 
-}
-function myReduce(array, fn, initialValue){
     let acc = initialValue !== undefined ? initialValue : array[0]
 	const startIndex = initialValue !== undefined ? 0 : 1
     for(let i = startIndex; i< array.length; i++){
